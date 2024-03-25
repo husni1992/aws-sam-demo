@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: A starter AWS Lambda function.
+Resources:
+  helloworldpython:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: app.lambda_handler
+      Runtime: python3.12
+      CodeUri: s3://husny-code-sam/63cdd7967122211241864b1df5d5e720
+      Description: A starter AWS Lambda function.
+      MemorySize: 128
+      Timeout: 3
